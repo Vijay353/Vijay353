@@ -25,7 +25,7 @@ Clearing three-way-match exceptions inside CFO authority, and stopping where a p
   <img src="assets/matchpoint-flow-light.svg" width="100%" alt="Flow: Match, Policy, Authorize, Post, Verify. Anything outside the approval limit goes to a person. Guarantees: rules before every write, one post per invoice, read-back check, tamper-evident log.">
 </picture>
 
-**Why it matters** &nbsp; AP stops deciding exceptions by whoever has been around longest. Every posting is decided by written policy, approved per record, and can be proven to an auditor later — without a single duplicate payment.
+**Why it matters** &nbsp; AP stops deciding exceptions by whoever has been around longest. Every posting is decided by written policy, approved per record, and can be proven to an auditor later, without a single duplicate payment.
 
 **How it was proven** &nbsp; Built and tested against stateful ERP, supplier, and carrier simulators over real HTTP, failure cases included: 201 automated tests, 22 of them end-to-end in a real browser. Sandbox and live adapters are already in place and fail closed until they are verified against a real system.
 
@@ -84,7 +84,7 @@ Clearing three-way-match exceptions inside CFO authority, and stopping where a p
 
 | | |
 |:--|:--|
-| **Third Estate Ventures** <br><sub>Sep 2025 – Jun 2026</sub> | BI & UX Designer, Multi-Project Fellow. Took analysts from discovery to a rebuilt property dataset and the Power BI views they use — 60% fewer duplicate records. |
+| **Third Estate Ventures** <br><sub>Sep 2025 – Jun 2026</sub> | BI & UX Designer, Multi-Project Fellow. Took analysts from discovery to a rebuilt property dataset and the Power BI views they use: 60% fewer duplicate records. |
 | **Configit** <br><sub>Feb 2021 – May 2024</sub> | Solutions Consultant → Senior Solutions Consultant. Turned manufacturers' quote-to-order problems into requirements and owned delivery across Salesforce, SAP, and Configit CPQ. |
 | **FactSet** <br><sub>Dec 2018 – Feb 2021</sub> | Associate → Client Solutions Consultant. Traced institutional clients' data and analytics issues to the platform underneath; helped cut onboarding time by 40%. |
 | **Education** | M.S. Management Information Systems, University at Buffalo · B.Tech Computer Science, MNIT Jaipur |
