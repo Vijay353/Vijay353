@@ -1,106 +1,99 @@
-<div align="center">
-  <h1>Vijay Kumar</h1>
-  <h3>PRODUCT &amp; SOLUTIONS | I make enterprise software work for the people who have to use it.</h3>
-  <p>I connect user needs, what the business decides, and how the systems underneath actually behave.<br>
-  Building agentic systems from promise to proof.</p>
-  <p>
-    <a href="https://www.vijaykumar.live/">Portfolio ↗</a> ·
-    <a href="https://www.linkedin.com/in/vk902/">LinkedIn ↗</a> ·
-    <a href="mailto:banothvijaykumar01@gmail.com?subject=Resume%20request">Request résumé ↗</a> ·
-    <a href="https://www.credly.com/users/vijay-kumar-banoth">Credly ↗</a>
-  </p>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" width="100%" alt="Vijay Kumar. Solutions and Product. I take the failures people fix by hand and turn them into systems that are safe to automate.">
+</picture>
 
-## From promise to proof
+[Portfolio](https://www.vijaykumar.live/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/vk902/) &nbsp;·&nbsp; [Email](mailto:banothvijaykumar01@gmail.com)
 
-I build systems that verify whether a promised transaction actually happened. My work connects customer problems, deterministic policy, and enterprise integration across fintech, accounts payable, SOC compliance, and CPQ-to-ERP workflows.
+Looking for **Solution Engineer, Product, and Solutions Consultant** roles — the ones that sit between business rules, enterprise systems, and the people who run them every day.
 
-> “It reads like three careers, but it's one skill used at different layers of the same problem.”
+<br>
 
-## Featured systems
+### MatchPoint &nbsp;<sub><sup>ACCOUNTS PAYABLE</sup></sub>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <sub>AGENTIC AI · SERVICE OPS</sub>
-      <h3><a href="https://www.vijaykumar.live/work#refund-assurance">Refund Assurance ↗</a></h3>
-      <p>Reopens a service case when a promised refund fails.</p>
-      <p><b>73/73 tests passing</b> · 1 idempotent write</p>
-      <p><code>Event</code> → <code>Extract</code> → <code>Policy</code> → <code>Reopen</code> → <code>Verify</code></p>
-      <sub>Salesforce-style systems simulated. Rule-based extraction at runtime.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <sub>AGENTIC AI · AP AUTOMATION</sub>
-      <h3><a href="https://www.vijaykumar.live/work#matchpoint">MatchPoint ↗</a></h3>
-      <p>Resolves invoice mismatches within approval limits.</p>
-      <p><b>201/201 tests passing</b> · 22 Playwright E2E · hash-chained audit log</p>
-      <p><code>Match</code> → <code>Policy</code> → <code>Authorize</code> → <code>Post</code> → <code>Verify</code></p>
-      <sub>ERP, supplier, and carrier simulators use HTTP. Container rehearsed locally.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <sub>AGENTIC AI · SECURITY OPS</sub>
-      <h3><a href="https://www.vijaykumar.live/work#business-impact-gate">Business Impact Gate ↗</a></h3>
-      <p>Checks business impact before an analyst isolates a device.</p>
-      <p><b>92/92 tests passing</b> · 8/8 browser E2E · 0 endpoint mutations</p>
-      <p><code>Snapshot</code> → <code>Extract</code> → <code>Policy</code> → <code>Stage</code> → <code>Verify</code></p>
-      <sub>Simulated security and ITSM/CMDB systems. Live adapters are fail-closed placeholders.</sub>
-    </td>
-    <td valign="top">
-      <sub>AGENTIC AI · MARKETPLACE OPS</sub>
-      <h3><a href="https://www.vijaykumar.live/work#marginpulse">MarginPulse ↗</a></h3>
-      <p>Pauses paid ads when the kitchen is overloaded and verifies the pause.</p>
-      <p><b>81 Vitest + 6 Playwright tests</b> · 1 write path · 3 failure classifications</p>
-      <p><code>Webhook</code> → <code>Investigate</code> → <code>Policy</code> → <code>Approve</code> → <code>Pause</code> → <code>Verify</code></p>
-      <sub>Uber Ads and POS/KDS run as stateful HTTP simulators.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" valign="top">
-      <sub>AGENTIC AI · DATA &amp; AI</sub>
-      <h3><a href="https://www.vijaykumar.live/work#genai-agentic-rag">GenAI Agentic RAG ↗</a></h3>
-      <p>Answers questions over a document set with LLaMA 3, ReAct, and Streamlit.</p>
-      <p><b>&lt;2s response time</b> · 90%+ accuracy <sub>(portfolio-reported)</sub></p>
-      <p><code>Retrieve</code> → <code>Reason and act</code> → <code>Answer</code></p>
-      <sub>Document-set Q&amp;A. The portfolio does not specify the benchmark method.</sub>
-    </td>
-  </tr>
-</table>
+Fixing invoice mismatches without creating new ones.
 
-## How I work
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/matchpoint-story-dark.svg">
+  <img src="assets/matchpoint-story-light.svg" width="100%" alt="Problem: invoice mismatches are fixed by hand. Constraint: post only inside the approval limit, never twice, and prove it. Decision: check rules first, post once, read it back. Result: in-limit mismatches resolve on their own; the rest reach a person with the reasoning.">
+</picture>
 
-<p>
-  <code>01</code> Start with the person behind the ticket.<br>
-  <code>02</code> Trace it to the system.<br>
-  <code>03</code> Own it past the handoff.<br>
-  <code>04</code> Let evidence set the priority.
-</p>
+<br><br>
 
-## Background
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/matchpoint-flow-dark.svg">
+  <img src="assets/matchpoint-flow-light.svg" width="100%" alt="Flow: Match, Policy, Authorize, Post, Verify. Anything outside the approval limit goes to a person. Guarantees: rules before every write, one post per invoice, read-back check, tamper-evident log.">
+</picture>
+
+**Why it matters** &nbsp; Shrinks the AP exception queue without adding duplicate-payment or audit risk. &nbsp;[Read the case study →](https://www.vijaykumar.live/work#matchpoint)
+
+<br>
+
+### Same approach, other problems
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <b>Experience</b><br>FactSet → Configit → Third Estate Ventures<br><sub>Third Estate Ventures · Sep 2025 – Jun 2026</sub><br><br>
-      <b>Education</b><br>M.S. MIS, University at Buffalo · B.Tech CS, MNIT Jaipur
+      <br>
+      <b><a href="https://www.vijaykumar.live/work#refund-assurance">Refund Assurance</a></b> &nbsp;<sub>SERVICE OPS</sub>
+      <p>A promised refund quietly fails and nobody notices until the customer calls back. This catches it and reopens the case on its own.</p>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/refund-flow-dark.svg">
+        <img src="assets/refund-flow-light.svg" width="100%" alt="Event, Extract, Policy, Reopen, Verify">
+      </picture>
+      <p><sub>Customers don't have to chase a refund twice.</sub></p>
     </td>
     <td width="50%" valign="top">
-      <b>Credentials</b><br>CSPO · Lean Six Sigma Green Belt · ITIL 4<br><br>
-      <b>Stack</b><br>TypeScript · React · Node.js · Python · SQLite · Playwright · Azure
+      <br>
+      <b><a href="https://www.vijaykumar.live/work#business-impact-gate">Business Impact Gate</a></b> &nbsp;<sub>SECURITY OPS</sub>
+      <p>Before an analyst cuts a device off the network, this checks what the business would lose and prepares an approval instead of acting alone.</p>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/gate-flow-dark.svg">
+        <img src="assets/gate-flow-light.svg" width="100%" alt="Snapshot, Extract, Policy, Stage, Verify">
+      </picture>
+      <p><sub>A security fix doesn't take down something critical.</sub></p>
     </td>
   </tr>
 </table>
+
+<sub>Also built: <a href="https://www.vijaykumar.live/work#marginpulse">MarginPulse</a>, which pauses paid ads when a restaurant kitchen is overloaded, and a <a href="https://www.vijaykumar.live/work#genai-agentic-rag">document Q&amp;A agent</a> on LLaMA 3.</sub>
+
+<br><br>
+
+### How I work
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/how-i-work-dark.svg">
+  <img src="assets/how-i-work-light.svg" width="100%" alt="1. Start with what breaks for the person doing the work. 2. Check rules against the real system before writing. 3. Make every change undoable and logged. 4. Verify to close.">
+</picture>
+
+<br>
+
+### Where I fit
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/where-i-fit-dark.svg">
+  <img src="assets/where-i-fit-light.svg" width="100%" alt="Product Management: find the real problem, write clear requirements, prove the value. Solution Engineering: proofs of concept, ERP/CRM/ITSM integrations, API contracts. Solution Consulting: process mapping, approvals and governance, change adoption.">
+</picture>
+
+<br><br>
+
+### Background
+
+| | |
+|:--|:--|
+| **Experience** | FactSet (financial data) → Configit (CPQ) → Third Estate Ventures <sub>· Sep 2025 – Jun 2026</sub> |
+| **Education** | M.S. Management Information Systems, University at Buffalo · B.Tech Computer Science, MNIT Jaipur |
+| **Credentials** | CSPO · Lean Six Sigma Green Belt · ITIL 4 |
+| **Tools** | TypeScript · Node.js · Python · Playwright · Azure |
+
+<br>
 
 ---
 
-<div align="center">
-  <h3>Let's work together.</h3>
-  <p>Open to product management, technology consulting, and solutions roles.</p>
-  <p>
-    <a href="mailto:banothvijaykumar01@gmail.com">Email me ↗</a> ·
-    <a href="https://www.linkedin.com/in/vk902/">LinkedIn ↗</a> ·
-    <a href="https://www.vijaykumar.live/">Portfolio ↗</a>
-  </p>
-  <sub>© 2026 Vijay Kumar</sub>
-</div>
+**Open to Solution Engineer, Product, and Solutions Consultant conversations.**<br>
+I'm happiest where the job needs both system design and translating between technical and business teams.
+
+[Email](mailto:banothvijaykumar01@gmail.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/vk902/) &nbsp;·&nbsp; [Portfolio](https://www.vijaykumar.live/)
+
+<sub>These systems run against stand-in ERP, CRM, security, and ad-platform services I built to behave like the real ones, failure cases included. The design patterns carry over to live systems.</sub>
