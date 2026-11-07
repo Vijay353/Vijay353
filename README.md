@@ -1,21 +1,21 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" width="100%" alt="Vijay Kumar. Solutions and Product. I design decision systems between business policy and enterprise platforms. My current focus is refund integrity, invoice matching, and security isolation gates. The recurring design contract is simple: authorize before mutation, make retries safe, preserve evidence, and verify the resulting state.">
+  <img src="assets/header-light.svg" width="100%" alt="Vijay Kumar. Solutions and Product. I take the failures people still fix by hand and turn them into systems that are safe to automate.">
 </picture>
 
 [Portfolio](https://www.vijaykumar.live/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/vk902/) &nbsp;·&nbsp; [Email](mailto:banothvijaykumar01@gmail.com)
 
-Looking for **Solution Engineer, Product, and Solutions Consultant** roles, the ones that sit between business rules, enterprise systems, and the people who run them every day.
+Looking for **Solution Engineer and Product** roles that sit between policy, systems, and the people who run them. I'm strongest at taking a vague, recurring operational failure and turning it into a system that behaves the same way every time and can be audited afterwards.
 
 <br>
 
 ### MatchPoint &nbsp;<sub><sup>ACCOUNTS PAYABLE</sup></sub>
 
-Fixing invoice mismatches without creating new ones.
+Clearing three-way-match exceptions inside CFO authority, and stopping where a person has to decide.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/matchpoint-story-dark.svg">
-  <img src="assets/matchpoint-story-light.svg" width="100%" alt="Problem: invoice mismatches are fixed by hand. Constraint: post only inside the approval limit, never twice, and prove it. Decision: check rules first, post once, read it back. Result: in-limit mismatches resolve on their own; the rest reach a person with the reasoning.">
+  <img src="assets/matchpoint-story-light.svg" width="100%" alt="Problem: invoice mismatches are fixed by hand. Constraint: post only inside the approval limit, never twice, and prove it. Decision: check rules first, post once, read it back. Result: 60% fewer exceptions in simulated runs, about 12K down to 4.8K; the rest reach a person with the reasoning.">
 </picture>
 
 <br><br>
@@ -25,46 +25,48 @@ Fixing invoice mismatches without creating new ones.
   <img src="assets/matchpoint-flow-light.svg" width="100%" alt="Flow: Match, Policy, Authorize, Post, Verify. Anything outside the approval limit goes to a person. Guarantees: rules before every write, one post per invoice, read-back check, tamper-evident log.">
 </picture>
 
-**Why it matters** &nbsp; Shrinks the AP exception queue without adding duplicate-payment or audit risk. &nbsp;[Read the case study →](https://www.vijaykumar.live/work#matchpoint)
+**Why it matters** &nbsp; AP stops deciding exceptions by whoever has been around longest. Every posting is decided by written policy, approved per record, and can be proven to an auditor later — without a single duplicate payment.
+
+**How it was proven** &nbsp; Built and tested against stateful ERP, supplier, and carrier simulators over real HTTP, failure cases included: 201 automated tests, 22 of them end-to-end in a real browser. Sandbox and live adapters are already in place and fail closed until they are verified against a real system.
+
+[Case study and live demo →](https://www.vijaykumar.live/work#matchpoint)
 
 <br>
 
-### Same approach, other problems
+### Same approach, other high-stakes failures
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <br>
       <b><a href="https://www.vijaykumar.live/work#refund-assurance">Refund Assurance</a></b> &nbsp;<sub>SERVICE OPS</sub>
-      <p>A promised refund quietly fails and nobody notices until the customer calls back. This catches it and reopens the case on its own.</p>
+      <p>A promised refund fails quietly and the case gets closed anyway. This reopens it as an owned recovery case, only when the failure is confirmed.</p>
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="assets/refund-flow-dark.svg">
         <img src="assets/refund-flow-light.svg" width="100%" alt="Event, Extract, Policy, Reopen, Verify">
       </picture>
-      <p><sub>Customers don't have to chase a refund twice.</sub></p>
+      <p><sub><b>Guarantee</b> &nbsp;One permission-checked write, proven by an independent read-back.</sub></p>
     </td>
     <td width="50%" valign="top">
       <br>
       <b><a href="https://www.vijaykumar.live/work#business-impact-gate">Business Impact Gate</a></b> &nbsp;<sub>SECURITY OPS</sub>
-      <p>Before an analyst cuts a device off the network, this checks what the business would lose and prepares an approval instead of acting alone.</p>
+      <p>An analyst is about to isolate a device without knowing what the business loses. This adds that context and stages a dual-approval request instead.</p>
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="assets/gate-flow-dark.svg">
         <img src="assets/gate-flow-light.svg" width="100%" alt="Snapshot, Extract, Policy, Stage, Verify">
       </picture>
-      <p><sub>A security fix doesn't take down something critical.</sub></p>
+      <p><sub><b>Guarantee</b> &nbsp;Zero device changes on its own, and an expired request never counts as approved.</sub></p>
     </td>
   </tr>
 </table>
 
-<sub>Also built: <a href="https://www.vijaykumar.live/work#marginpulse">MarginPulse</a>, which pauses paid ads when a restaurant kitchen is overloaded, and a <a href="https://www.vijaykumar.live/work#genai-agentic-rag">document Q&amp;A agent</a> on LLaMA 3.</sub>
-
-<br><br>
+<br>
 
 ### How I work
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/how-i-work-dark.svg">
-  <img src="assets/how-i-work-light.svg" width="100%" alt="1. Start with what breaks for the person doing the work. 2. Check rules against the real system before writing. 3. Make every change undoable and logged. 4. Verify to close.">
+  <img src="assets/how-i-work-light.svg" width="100%" alt="How I work, as seen in MatchPoint: 1. Start with what breaks: price variances, partial receipts, duplicate invoices. 2. Policy decides inside CFO authority before any ERP write. 3. Each write is idempotent and logged in a tamper-evident log. 4. A post counts only once it is read back from the ERP.">
 </picture>
 
 <br>
@@ -73,7 +75,7 @@ Fixing invoice mismatches without creating new ones.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/where-i-fit-dark.svg">
-  <img src="assets/where-i-fit-light.svg" width="100%" alt="Product Management: find the real problem, write clear requirements, prove the value. Solution Engineering: proofs of concept, ERP/CRM/ITSM integrations, API contracts. Solution Consulting: process mapping, approvals and governance, change adoption.">
+  <img src="assets/where-i-fit-light.svg" width="100%" alt="Product Management, proof: Third Estate data rebuild with 60% fewer duplicate records. Solution Engineering, proof: Configit delivery across Salesforce, SAP and Configit CPQ. Solution Consulting, proof: FactSet, helped cut client onboarding time by 40%.">
 </picture>
 
 <br><br>
@@ -82,18 +84,19 @@ Fixing invoice mismatches without creating new ones.
 
 | | |
 |:--|:--|
-| **Experience** | FactSet (financial data) → Configit (CPQ) → Third Estate Ventures <sub>· Sep 2025 – Jun 2026</sub> |
+| **Third Estate Ventures** <br><sub>Sep 2025 – Jun 2026</sub> | BI & UX Designer, Multi-Project Fellow. Took analysts from discovery to a rebuilt property dataset and the Power BI views they use — 60% fewer duplicate records. |
+| **Configit** <br><sub>Feb 2021 – May 2024</sub> | Solutions Consultant → Senior Solutions Consultant. Turned manufacturers' quote-to-order problems into requirements and owned delivery across Salesforce, SAP, and Configit CPQ. |
+| **FactSet** <br><sub>Dec 2018 – Feb 2021</sub> | Associate → Client Solutions Consultant. Traced institutional clients' data and analytics issues to the platform underneath; helped cut onboarding time by 40%. |
 | **Education** | M.S. Management Information Systems, University at Buffalo · B.Tech Computer Science, MNIT Jaipur |
 | **Credentials** | CSPO · Lean Six Sigma Green Belt · ITIL 4 |
-| **Tools** | TypeScript · Node.js · Python · Playwright · Azure |
 
 <br>
 
 ---
 
 **Open to Solution Engineer, Product, and Solutions Consultant conversations.**<br>
-I'm happiest where the job needs both system design and translating between technical and business teams.
+I'm the best fit where the job needs real system design and someone who can explain it to both the people running the process and the people approving it.
 
 [Email](mailto:banothvijaykumar01@gmail.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/vk902/) &nbsp;·&nbsp; [Portfolio](https://www.vijaykumar.live/)
 
-<sub>These systems run against stand-in ERP, CRM, security, and ad-platform services I built to behave like the real ones, failure cases included. The design patterns carry over to live systems.</sub>
+<sub>Every system here is tested against stateful simulations of the real platforms, including how they fail, so the guarantees hold before anything touches production.</sub>
