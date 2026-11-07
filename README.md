@@ -1,11 +1,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" width="100%" alt="Vijay Kumar. Solutions and Product. I take the failures people fix by hand and turn them into systems that are safe to automate.">
+  <img src="assets/header-light.svg" width="100%" alt="Vijay Kumar. Solutions and Product. I design decision systems between business policy and enterprise platforms. My current focus is refund integrity, invoice matching, and security isolation gates. The recurring design contract is simple: authorize before mutation, make retries safe, preserve evidence, and verify the resulting state.">
 </picture>
 
 [Portfolio](https://www.vijaykumar.live/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/vk902/) &nbsp;·&nbsp; [Email](mailto:banothvijaykumar01@gmail.com)
 
-Looking for **Solution Engineer, Product, and Solutions Consultant** roles — the ones that sit between business rules, enterprise systems, and the people who run them every day.
+Looking for **Solution Engineer, Product, and Solutions Consultant** roles, the ones that sit between business rules, enterprise systems, and the people who run them every day.
 
 <br>
 
